@@ -1,3 +1,19 @@
+# Usage for MFI AMR
+
+This actually has multiple packages. Namely:
+- velodyne_driver
+- velodyne_pointcloud
+- velodyne_msgs
+- velodyne_laserscan
+- velodyne
+
+We need to build these packages in the same sequence as listed above to ensure successful build.
+
+Eg. ```colcon build --packages-select velodyne_driver``` followed by ```colcon build --packages-select velodyne_pointcloud```
+
+
+# Source Notes
+
 [![](https://github.com/ros-drivers/velodyne/workflows/Basic%20Build%20Workflow/badge.svg?branch=ros2)](https://github.com/ros-drivers/velodyne/actions)
 
 Overview
